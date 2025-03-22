@@ -12,7 +12,12 @@ import { CrossIcon } from "../icons/CrossIcon";
   Link = "Link"
  }
 
-export function CreateContentModal({open , onClose}){
+interface CreateContentModalProps {
+  open: boolean;
+  onClose: () => void;
+}
+
+export function CreateContentModal({ open, onClose }: CreateContentModalProps){
 
 // const [itemCountInc ,setItemCountInc] = useState(0);
 
