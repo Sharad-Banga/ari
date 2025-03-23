@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Button } from "../components/Button";
 import { Input } from "../components/CreateContentModal";
 import axios from "axios";
@@ -8,6 +8,8 @@ import {  useNavigate } from "react-router-dom";
 
 export function Signup(){
 
+  const [loading , setLoading] = useState(false);
+
   const usernameRef = useRef<any>("");
   const passwordRef = useRef<any>("");
 
@@ -16,6 +18,7 @@ export function Signup(){
   
 
   async function signup() {
+    setLoading(true);
     try {
       const username = usernameRef.current?.value;
       const password = passwordRef.current?.value;
@@ -86,7 +89,8 @@ export function Signup(){
                       </div> */}
 
                       <div className="flex justify-center pt-4">
-                      <Button onClick={signup} variant="sign" text="Sign Up" /> 
+                      <Button onClick={signup} variant="sign"
+                       text={loading?"Creating Account...":"Sign Up"} /> 
                       </div>
 
                   </div>
