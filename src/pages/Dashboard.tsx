@@ -103,7 +103,7 @@ export function Dashboard() {
         
       </div>
       <div className="mt-auto p-4 text-center text-white text-sm ">
-                Developed and Designed By <a className="text-[#2AB7B1] hover:text-[#1e8682] transition-colors duration-300" href="https://x.com/sharad_banga" target="_blank" rel="noopener noreferrer">sharad banga</a>
+                Developed and Designed By <a className="text-[#2AB7B1] hover:text-[#1e8682] transition-colors duration-300" href="https://x.com/sharad_banga" target="_blank" rel="noopener noreferrer">Mohit, Manpreet , Pravhjot</a>
               </div>
     </div>
   )
