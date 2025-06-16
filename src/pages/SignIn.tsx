@@ -95,11 +95,11 @@ export function SignIn() {
         Developed and Designed By{" "}
         <a
           className="text-[#2AB7B1] hover:text-[#1e8682] transition-colors duration-300"
-          href="https://x.com/sharad_banga"
+          href="/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          sharad banga
+         Mohit, Manpreet , Pravhjot
         </a>
       </div>
     </div>
